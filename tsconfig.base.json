@@ -79,6 +79,7 @@
       "@polkadot/test-support/": ["test-support/src/"],
       "@polkadot/test-support/*": ["test-support/src/*"]
     },
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "esModuleInterop": true
 	}
  }

@@ -1,16 +1,10 @@
 {
-  "author": "Jaco Greeff <jacogr@gmail.com>",
-  "bugs": "https://github.com/polkadot-js/apps/issues",
+  "author": "Lokaka",
   "description": "An Apps portal into the Polkadot network",
   "homepage": "https://github.com/polkadot-js/apps#readme",
-  "license": "Apache-2.0",
-  "name": "polkadot-apps",
+  "name": "lokaka-explorer",
   "packageManager": "yarn@3.0.1",
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/polkadot-js/apps.git"
-  },
   "sideEffects": false,
   "version": "0.106.2-42",
   "workspaces": [
