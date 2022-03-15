@@ -16,7 +16,6 @@
   "workspaces": [
     "packages/*"
   ],
-  "main": "packages/apps-electron/build/electron.js",
   "scripts": {
     "analyze": "yarn clean && BUILD_ANALYZE=1 yarn run build:code && yarn source-map-explorer packages/apps/build/main.*.js",
     "build": "yarn run build:i18n && yarn run build:code",
@@ -40,13 +39,16 @@
     "test:one": "polkadot-dev-run-test",
     "test:skipped": "echo 'tests skipped'"
   },
+  "dependencies": {
+    "react-i18next": "^11.15.7"
+  },
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "@babel/register": "^7.17.0",
     "@babel/runtime": "^7.17.2",
     "@crustio/crust-pin": "^1.0.0",
     "@pinata/sdk": "^1.1.23",
-    "@polkadot/dev": "^0.65.74",
+    "@polkadot/dev": "^0.65.90",
     "@types/chart.js": "^2.9.35",
     "@types/file-saver": "^2.0.5",
     "@types/jest": "^27.4.1",
@@ -60,15 +62,14 @@
     "concurrently": "^7.0.0",
     "devtron": "^1.4.0",
     "dnslink-cloudflare": "^3.0.0",
-    "electron": "^12.2.3",
-    "electron-builder": "22.14.13",
-    "electron-builder-notarize": "^1.2.0",
+    "html-loader": "^3.1.0",
     "i18next-scanner": "^3.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
     "source-map-explorer": "^2.5.2",
     "styled-components": "^5.3.3",
+    "thread-loader": "^3.0.4",
     "webpack": "^5.69.1",
     "webpack-cli": "^4.9.2"
   },

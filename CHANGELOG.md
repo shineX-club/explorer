@@ -648,7 +648,6 @@ Contributed:
 
 Changes:
 
-- Adjust apps-electron, taking care of 0.92.1 launching
 - Allow teleport for Kusama <-> Statemine
 - Calculate and display teleport fees
 - Fix Patract Elara endpoints on Westend

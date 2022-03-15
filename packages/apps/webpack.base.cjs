@@ -38,6 +38,9 @@ function createWebpack (context, mode = 'production') {
     context,
     entry: ['@babel/polyfill', './src/index.tsx'],
     mode,
+    stats: {
+      children: true
+    },
     module: {
       rules: [
         {
@@ -49,7 +52,7 @@ function createWebpack (context, mode = 'production') {
           ]
         },
         {
-          exclude: /(node_modules)/,
+          exclude: [/node_modules/],
           test: /\.(js|mjs|ts|tsx)$/,
           use: [
             require.resolve('thread-loader'),
