@@ -101,6 +101,10 @@ function createWebpack (context, mode = 'production') {
               loader: require.resolve('null-loader')
             }
           ]
+        },
+        {
+          test: /\.html$/i,
+          loader: require.resolve('html-loader'),
         }
       ]
     },
