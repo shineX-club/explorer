@@ -71,4 +71,4 @@ class ErrorBoundary extends React.Component<Props> {
   }
 }
 
-export default translate(ErrorBoundary);
+export default translate(ErrorBoundary as unknown as any);
