@@ -102,10 +102,6 @@ function createWebpack (context, mode = 'production') {
             }
           ]
         },
-        {
-          test: /\.html$/i,
-          loader: require.resolve('html-loader'),
-        }
       ]
     },
     node: {
