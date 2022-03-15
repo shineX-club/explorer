@@ -4,6 +4,8 @@
 
 # This script is used when the docker container starts and does the magic to
 # bring the ENV variables to the generated static UI.
+rm -rf ./env-config.js
+touch ./env-config.js
 
 TARGET=./env-config.js
 

@@ -17,7 +17,6 @@ If you run one or more IPFS node(s), pinning the UI (which only gets updated on 
 The repo is split into a number of packages, each representing an application. These are -
 
 - [apps](packages/apps/) This is the main entry point. It handles the selection sidebar and routing to the specific application being displayed.
-- [apps-electron](packages/apps-electron/) Desktop app running [apps](packages/apps/).
 - [page-accounts](packages/page-accounts/) A basic account management app.
 - [page-address-book](packages/page-address-book/) A basic address management app.
 - [page-democracy](packages/page-democracy/) A basic voting app, allowing votes on activate proposals and referenda.
@@ -161,5 +160,3 @@ The accounts are stored in the following directories:
 * Mac: `~/Library/Application Support/polkadot-apps/polkadot-accounts`
 * Linux: `~/.config/polkadot-apps/polkadot-accounts` (or `$XDG_CONFIG_HOME/polkadot-apps/polkadot-accounts` if `$XDG_CONFIG_HOME` is defined)
 * Windows: `%APPDATA%\polkadot-apps\polkadot-accounts`
-
-For more details on the desktop app, head over to [Electron package README](https://github.com/polkadot-js/apps/blob/master/packages/apps-electron/README.md).
