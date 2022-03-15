@@ -39,7 +39,7 @@ export function createPolkadot (t: TFunction): EndpointOption {
           Parity: 'ws://118.195.186.48:9945',
           OnFinality: 'ws://118.195.186.48:9945'
         }
-      },
+      }
       // {
       //   info: 'statemint',
       //   paraId: 1000,
